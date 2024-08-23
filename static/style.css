@@ -1,0 +1,89 @@
+body, h1 {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+label {
+    display: block;
+}
+main {
+    background-color: #202020;
+    height: 100vh;
+    display:flex;
+    align-items: center;
+}
+div.info-box {    
+    width: 500px;    
+    margin: auto;    
+}
+.info-box h1 {
+    margin-bottom: 30px;
+    color: wheat;
+    font-size: 3rem;
+}
+div.info-text {
+    margin-bottom: 20px;
+    color: wheat;
+    font-size: 2rem;
+    font-weight:700;
+}
+div.info-detail-text {    
+    border-radius: 8px;
+    background-color: transparent;
+    color: wheat;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+.search-box {
+    display: flex;
+    flex-direction: column;
+}
+.search-box input {
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid wheat;
+    background-color: transparent;
+    color:white;
+}
+.search-box button {
+    padding: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    background-color: wheat ;
+    border-radius: 8px;
+    border: 1px solid wheat;
+    cursor: pointer;
+    
+}
+.search-box button:hover {
+    background-color: rgb(158, 143, 115) ;
+}
+.result-page {
+    background-color: #202020;
+    height: 100vh;
+}
+.result-box {
+    width: 1050px;    
+    margin: 0 auto;
+    padding-top: 4rem;
+}
+.result-box header {
+    border-bottom: solid 1px wheat;
+    color: wheat;
+    margin-bottom: 2rem;
+}
+table {
+    color: wheat;
+    border: 1px solid wheat;
+    width: 100%;
+    border-collapse: collapse;
+}
+thead {
+    background-color: wheat;
+    color: black;
+    font-weight: 700;
+}
+th, td {
+    border: 1px solid wheat;    
+}
