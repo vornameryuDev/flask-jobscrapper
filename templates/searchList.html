@@ -11,26 +11,45 @@
         
         <div class="result-box">
             <header>
+                <a href="/">
+                    <h3 style="color:wheat">< back</h3>
+                </a>
                 <h1 class="title">JobScrapper Keyword: {{ keyword }}</h1>
-                <p>berlinstartupjobs.com / weworkremotely.com / web3.career</p>
+                <div>
+                    <p>berlinstartupjobs.com  / web3.career</p>
+                    <a href="/export?keyword={{ keyword }}">
+                        <button class="export-btn" style="margin-bottom:10px; background-color: wheat; border-radius:8px; padding:4px; cursor:pointer;">Export Job List</button>
+                    </a>
+                </div>
             </header>
             
             <table>
                 <thead>
                     <tr>
-                        <th>번호</th>
-                        <th>이름</th>
-                        <th>구조</th>
+                        <th >Idx</th>
+                        <th >Title</th>
+                        <th >Company</th>
+                        <th >Wisper</th>
+                        <th >Link</th>
+                        <th >Base Info</th>
                     </tr>
                 </thead>
                 <tbody>
+                    {% for jobs in keyword_jobs %}
                     <tr>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>1</td>
+                        <td>{{ loop.index }} </td>
+                        <td>{{ jobs.title }} </td>
+                        <td>{{ jobs.company }} </td>
+                        <td>{{ jobs.whisper }} </td>
+                        <td>
+                            <a href="{{ jobs.link }}">Go Lint →</a>
+                        </td>
+                        <td>{{ jobs.base }} </td>
                     </tr>
+                    {% endfor %}                    
                 </tbody>
             </table>
+
         </div>
 
     </div>

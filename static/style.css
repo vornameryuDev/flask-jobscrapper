@@ -3,12 +3,20 @@ body, h1 {
     padding:0;
     box-sizing: border-box;
 }
+a {
+    text-decoration: none;
+    color: inherit;
+}
+a:hover {
+    color: white;
+    font-weight: 700;
+}
 label {
     display: block;
 }
 main {
     background-color: #202020;
-    height: 100vh;
+    min-height: 100vh;
     display:flex;
     align-items: center;
 }
@@ -34,7 +42,7 @@ div.info-detail-text {
     font-size: 1rem;
     margin-bottom: 10px;
 }
-.search-box {
+.search-box form {
     display: flex;
     flex-direction: column;
 }
@@ -57,16 +65,17 @@ div.info-detail-text {
     
 }
 .search-box button:hover {
-    background-color: rgb(158, 143, 115) ;
+    background-color: rgb(158, 143, 115);
 }
 .result-page {
-    background-color: #202020;
-    height: 100vh;
+    background-color: #202020;    
 }
 .result-box {
     width: 1050px;    
     margin: 0 auto;
     padding-top: 4rem;
+    height: 100%;
+    padding-bottom: 4rem;
 }
 .result-box header {
     border-bottom: solid 1px wheat;
@@ -86,4 +95,5 @@ thead {
 }
 th, td {
     border: 1px solid wheat;    
+    padding:4px;
 }

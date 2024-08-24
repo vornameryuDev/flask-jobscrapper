@@ -22,12 +22,13 @@
                 <label>Connecting URL</label>
                 <div>1) berlinstartupjobs.com</div>
                 <div>2) weworkremotely.com</div>
-                <div>3) web3.career</div>
             </div>
 
-            <div class="search-box">                
-                <input type="text" placeholder="Write Keyword">
-                <button>SEARCH</button>                
+            <div class="search-box">
+                <form action="/search"">
+                    <input name="keyword" type="text" placeholder="Write Keyword" required/>
+                    <button>SEARCH</button>
+                </form>
             </div>
 
         </div>
@@ -36,7 +37,6 @@
     
 </body>
 
-<!-- js -->
-<script src="/static/js/home.js"></script>
+
 
 </html>
